@@ -8,7 +8,7 @@ const Home = () => {
     const { user, setUser } = useContext(UserContext);
     const [room, setRoom] = useState('');
     const [rooms, setRooms] = useState([]);
-    const ENDPT = 'localhost:5001';
+    const ENDPT = 'fullstackwebchatapp.herokuapp.com';
     useEffect(() => {
         socket = io(ENDPT);
         return () => {
