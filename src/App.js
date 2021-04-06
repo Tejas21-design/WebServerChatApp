@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     const verifyUser = async () => {
       try {
-        const res = await fetch('http://localhost:5001/verifyuser', {
+        const res = await fetch('https://fullstackwebchatapp.herokuapp.com//verifyuser', {
           credentials: 'include',
           headers: { 'Content-Type': 'application/json' }
         });
