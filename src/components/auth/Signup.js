@@ -17,7 +17,7 @@ const Signup = () => {
         setPasswordError('');
         console.log(name, email, password)
         try {
-            const res = await fetch('https://fullstackwebchatapp.herokuapp.com//signup', {
+            const res = await fetch('https://fullstackwebchatapp.herokuapp.com/signup', {
                 method: 'POST',
                 credentials: 'include',
                 body: JSON.stringify({ name, email, password }),

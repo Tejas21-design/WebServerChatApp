@@ -8,7 +8,7 @@ const Navbar = () => {
 
     const logout = async () => {
         try {
-            const res = await fetch('http://localhost:5001/logout', {
+            const res = await fetch('https://fullstackwebchatapp.herokuapp.com/logout', {
                 credentials: 'include',
 
             });
